@@ -4,6 +4,8 @@ const video = document.querySelector('.hero-video');
 const controlBtn = document.querySelector('.sound-control');
 const audio = document.querySelector('.bg-music');
 const icon = document.querySelector('.sound-icon');
+const burgerIcon = document.querySelector('.burger-icon');
+const navLinks = document.querySelector('.head-right .nav-links');
 
 const heroList = ["/assets/videos/hero-1.mp4", "/assets/videos/hero-2.mp4", "/assets/videos/hero-3.mp4", "/assets/videos/hero-4.mp4",];
 const textList = ["gaming", "identity", "reality", "agentic ai"];
@@ -33,8 +35,6 @@ controlBtn.addEventListener("click", function () {
 })
 
 
-const burgerIcon = document.querySelector('.burger-icon');
-const navLinks = document.querySelector('.head-right .nav-links');
 
 burgerIcon.addEventListener('click', function () {
     navLinks.classList.toggle('active');

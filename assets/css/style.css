@@ -688,6 +688,7 @@ header {
     height: 400px;
     clip-path: polygon(32% 0, 94% 0, 74% 100%, 0% 100%);
     object-fit: cover;
+    z-index: 1;
 }
 
 .contact-image-2 {
@@ -697,6 +698,7 @@ header {
     height: 200px;
     clip-path: polygon(35% 6%, 75% 0%, 100% 50%, 75% 100%, 36% 95%, 8% 49%);
     object-fit: cover;
+    z-index: 1;
 }
 
 .contact-image-3 {
@@ -707,6 +709,7 @@ header {
     width: 250px;
     clip-path: polygon(52% 5%, 100% 38%, 82% 100%, 34% 93%, 0% 38%);
     object-fit: cover;
+    z-index: 1;
 }
 
 .contact-section p {
@@ -717,6 +720,8 @@ header {
     line-height: 10px;
     font-weight: 500;
     text-transform: uppercase;
+    position: relative;
+    z-index: 3;
 }
 
 .contact-section h1 {
@@ -735,6 +740,8 @@ header {
     animation: animate-gradient 2.5s linear infinite;
     max-width: 700px;
     text-align: center;
+    position: relative;
+    z-index: 3;
 }
 
 .contact-section button {
@@ -752,6 +759,8 @@ header {
     cursor: pointer;
     transition: 0.5s;
     box-shadow: 0 0 5px var(--gray-color);
+    position: relative;
+    z-index: 3;
 }
 
 .contact-section button:hover {
@@ -1106,6 +1115,10 @@ footer img {
         gap: 15px;
     }
 
+    .head-right .nav-links i {
+        display: none;
+    }
+
     .burger-icon {
         position: relative;
         display: block;
@@ -1160,6 +1173,12 @@ footer img {
         width: 250px;
         left: 10px;
         bottom: 0%;
+    }
+}
+
+@media screen and (max-width: 1045px) {
+    .head-right .nav-links i {
+        display: none;
     }
 }
 
