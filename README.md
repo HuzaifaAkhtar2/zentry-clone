@@ -4,7 +4,7 @@
 
 ## 📖 About the Project
 
-This is a **clone** of the homepage of **[Zentry.com](https://zentry.com/)**, created for **educational purposes only**. The goal of this project was to replicate the design and functionality of the original site as closely as possible, while enhancing my front-end development skills.
+This is a **clone** of the homepage of **[Zentry.com](https://zentry.com/)**, created for **educational purposes only**. The goal of this project was to replicate the design and functionality of the original site as closely as possible, while enhancing my front-end development skills. You can view the site live here **[https://huzaifa-zentry-clone.vercel.app/](https://huzaifa-zentry-clone.vercel.app/)**
 
 ## 🚀 Features
 
