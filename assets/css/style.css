@@ -880,14 +880,6 @@ footer img {
     color: var(--white-color);
 }
 
-/* Tiny local icon glyphs avoid a render-blocking third-party icon font. */
-.ri-arrow-down-s-line::before { content: '\2304'; }
-.ri-arrow-right-up-line::before { content: '\2197'; }
-.ri-volume-mute-fill::before { content: '\1F507'; }
-.ri-volume-up-fill::before { content: '\1F50A'; }
-.ri-menu-line::before { content: '\2630'; }
-.ri-close-line::before { content: '\00D7'; }
-
 /* Skip layout and paint work for sections far outside the viewport. */
 .info-section,
 .prologue-section,
@@ -909,17 +901,17 @@ footer {
 
 @keyframes autoBlur {
     0% {
-        opacity: 0;
+        filter: blur(40px);
     }
 
     40%,
     60% {
-        opacity: 1;
+        filter: blur(0);
         transform: translateY(0px);
     }
 
     100% {
-        opacity: 0;
+        filter: blur(40px);
         transform: translateY(-200px);
     }
 }
@@ -962,17 +954,6 @@ footer {
 }
 
 @media screen and (max-width: 798px) {
-    .auto-blur,
-    .auto-take-full,
-    .auto-display,
-    .about-section h1,
-    .card h1,
-    .prologue-section h1,
-    .intro-section h1,
-    .contact-section h1 {
-        animation: none;
-    }
-
     header {
         padding: 0 10px;
     }
